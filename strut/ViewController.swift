@@ -9,9 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var myCharacter = CharacterCard(character: .knotSmith)
+    var otherCharacter = CharacterCard(character: .medic)
+    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print(myCharacter.modStat(stat: .removeHeart))
+        print(myCharacter.modStat(stat: .removeHeart))
+        print(myCharacter.modStat(stat: .removeHeart))
+        print(myCharacter.modStat(stat: .removeHeart))
+        print(myCharacter.modStat(stat: .removeHeart))
+        myCharacter.modStat(stat: .removeRope)
+        print(myCharacter.hearts)
+        print(myCharacter.rope)
+       
     }
 
 
